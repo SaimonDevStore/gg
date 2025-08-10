@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAIMON DEV STORE - Serviços Digitais</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loading-content">
+            <div class="logo">
+                <i class="fas fa-code"></i>
+                <span>SAIMON DEV STORE</span>
+            </div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+            <p>Carregando...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-code"></i>
+                <span>SAIMON DEV STORE</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services" class="nav-link">Serviços</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#qualities" class="nav-link">Qualidades</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#fun" class="nav-link">Diversão</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contato</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="hero-text">SAIMON DEV STORE</span>
+            </h1>
+            <p class="hero-subtitle">Serviços digitais de qualidade para impulsionar seu projeto</p>
+            <div class="hero-buttons">
+                <a href="#services" class="btn btn-primary">Ver Serviços</a>
+                <a href="#contact" class="btn btn-secondary">Fale Conosco</a>
+            </div>
+            <div class="social-buttons">
+                <a href="https://discord.gg/QtDWnzg7n2" target="_blank" class="btn btn-social discord-btn">
+                    <i class="fab fa-discord"></i> Discord
+                </a>
+                <a href="#" class="btn btn-social instagram-btn">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+            </div>
+        </div>
+        <div class="hero-background">
+            <div class="particles"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Sobre Nós</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Sou Saimon, um desenvolvedor full-stack apaixonado por criar soluções digitais
+                        inovadoras. Com vasta experiência em desenvolvimento de bots, automações e sistemas web,
+                        ofereço serviços de alta qualidade para impulsionar seu projeto.</p>
+                    <p>Minha missão é transformar suas ideias em realidade digital, sempre priorizando a qualidade,
+                        segurança e performance em cada linha de código.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <i class="fas fa-robot"></i>
+                        <h3>10+</h3>
+                        <p>Bots Criados</p>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-users"></i>
+                        <h3>25+</h3>
+                        <p>Clientes Satisfeitos</p>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-code"></i>
+                        <h3>1000+</h3>
+                        <p>Linhas de Código</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Nossos Serviços</h2>
+
+            <!-- Tabs de Categorias -->
+            <div class="category-tabs">
+                <button class="tab-btn active" data-category="bots">🤖 Bots</button>
+                <button class="tab-btn" data-category="portfolio">💼 Portfólio</button>
+                <button class="tab-btn" data-category="minecraft">⚡ Scripts Minecraft</button>
+                <button class="tab-btn" data-category="discord">🎮 Servidores Discord</button>
+                <button class="tab-btn" data-category="sites">🌐 Sites</button>
+            </div>
+
+            <!-- Categoria: Bots -->
+            <div class="service-category active" id="bots">
+                <div class="services-grid">
+                    <!-- Bot Básico -->
+                    <div class="service-card" data-service="bot-basico">
+                        <div class="service-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3>Bot Básico</h3>
+                        <p>Comandos essenciais, moderação, logs e suporte por 30 dias</p>
+                        <div class="service-features">
+                            <ul>
+                                <li><i class="fas fa-check"></i> Comandos de moderação</li>
+                                <li><i class="fas fa-check"></i> Sistema de logs</li>
+                                <li><i class="fas fa-check"></i> Suporte por 30 dias</li>
+                                <li><i class="fas fa-check"></i> Configuração personalizada</li>
+                            </ul>
+                        </div>
+                        <div class="service-price">
+                            <span class="price">PREÇO CLICANDO EM VER DETALHES</span>
+                        </div>
+                        <button class="btn btn-primary service-btn">Ver Detalhes</button>
+                    </div>
+
+                    <!-- Bot Música -->
+                    <div class="service-card" data-service="bot-musica">
+                        <div class="service-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <h3>Bot Música</h3>
+                        <p>Player musical completo com playlists e integração Spotify/YouTube</p>
+                        <div class="service-features">
+                            <ul>
+                                <li><i class="fas fa-check"></i> Player de música</li>
+                                <li><i class="fas fa-check"></i> Integração Spotify/YouTube</li>
+                                <li><i class="fas fa-check"></i> Sistema de playlists</li>
+                                <li><i class="fas fa-check"></i> Controles avançados</li>
+                            </ul>
+                        </div>
+                        <div class="service-price">
+                            <span class="price">PREÇO CLICANDO EM VER DETALHES</span>
+                        </div>
+                        <button class="btn btn-primary service-btn">Ver Detalhes</button>
+                    </div>
+
+                    <!-- Bot IA -->
+                    <div class="service-card" data-service="bot-ia">
+                        <div class="service-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>Bot IA</h3>
+                        <p>Chat com IA integrado, geração de imagens e moderação inteligente</p>
+                        <div class="service-features">
+                            <ul>
+                                <li><i class="fas fa-check"></i> Chat com IA</li>
+                                <li><i class="fas fa-check"></i> Geração de imagens</li>
+                                <li><i class="fas fa-check"></i> Moderação inteligente</li>
+                                <li><i class="fas fa-check"></i> Suporte premium</li>
+                            </ul>
+                        </div>
+                        <div class="service-price">
+                            <span class="price">PREÇO CLICANDO EM VER DETALHES</span>
+                        </div>
+                        <button class="btn btn-primary service-btn">Ver Detalhes</button>
+                    </div>
+
+                    <!-- Bot Agenda -->
+                    <div class="service-card" data-service="bot-agenda">
+                        <div class="service-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h3>Bot de Agenda</h3>
+                        <p>Sistema de agendamento com lembretes e integração Google Calendar</p>
+                        <div class="service-features">
+                            <ul>
+                                <li><i class="fas fa-check"></i> Sistema de agendamento</li>
+                                <li><i class="fas fa-check"></i> Lembretes automáticos</li>
+                                <li><i class="fas fa-check"></i> Integração Google Calendar</li>
+                                <li><i class="fas fa-check"></i> Notificações personalizadas</li>
+                            </ul>
+                        </div>
+                        <div class="service-price">
+                            <span class="price">PREÇO CLICANDO EM VER DETALHES</span>
+                        </div>
+                        <button class="btn btn-primary service-btn">Ver Detalhes</button>
+                    </div>
+
+                    <!-- Bot Premium -->
+                    <div class="service-card premium-plus" data-service="bot-premium">
+                        <div class="service-icon">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                        <h3>Bot Premium</h3>
+                        <p>Inclui todos os bots de Discord criados pela Saimon Dev Store</p>
+                        <div class="service-features">
+                            <ul>
+                                <li><i class="fas fa-check"></i> Todos os bots da loja</li>
+                                <li><i class="fas fa-check"></i> Versão URL e COMPLETA</li>
+                                <li><i class="fas fa-check"></i> Acesso total a todos os bots</li>
+                                <li><i class="fas fa-check"></i> Suporte vitalício</li>
+                            </ul>
+                        </div>
+                        <div class="service-price">
+                            <span class="price">R$ 500,00</span>
+                        </div>
+                        <button class="btn btn-primary service-btn">Ver Detalhes</button>
+                    </div>
+
+                    <!-- Bot Customizável -->
+                    <div class="service-card" data-service="bot-customizavel">
+                        <div class="service-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3>Bot Customizável</h3>
+                        <p>Personalização total e possibilidade de adicionar vários bots em um só</p>
+                        <div class="service-features">
+                            <ul>
+                                <li><i class="fas fa-check"></i> Personalização total</li>
+                                <li><i class="fas fa-check"></i> Múltiplos bots em um</li>
+                                <li><i class="fas fa-check"></i> Funcionalidades exclusivas</li>
+                                <li><i class="fas fa-check"></i> Suporte personalizado</li>
+                            </ul>
+                        </div>
+                        <div class="service-price">
+                            <span class="price">R$ 20-180</span>
+                        </div>
+                        <button class="btn btn-primary service-btn">Ver Detalhes</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Categoria: Portfólio -->
+            <div class="service-category" id="portfolio">
+                <div class="services-grid">
+                    <!-- Portfólio Básico -->
+                    <div class="service-card" data-service="portfolio-basico">
+                        <div class="service-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <h3>Portfólio Básico</h3>
+                        <p>Site responsivo com formulário de contato e design moderno</p>
+                        <div class="service-features">
+                            <ul>
+                                <li><i class="fas fa-check"></i> Design responsivo</li>
+                                <li><i class="fas fa-check"></i> Formulário de contato</li>
+                                <li><i class="fas fa-check"></i> Animações CSS</li>
+                                <li><i class="fas fa-check"></i> SEO otimizado</li>
+                            </ul>
+                        </div>
+                        <div class="service-price">
+                            <span class="price">R$ 30,00</span>
+                        </div>
+                        <button class="btn btn-primary service-btn">Ver Detalhes</button>
+                    </div>
+
+                    <!-- Portfólio Premium -->
+                    <div class="service-card premium-plus" data-service="portfolio-premium">
+                        <div class="service-icon">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                        <h3>Portfólio Premium</h3>
+                        <p>Site completo com painel admin e funcionalidades avançadas</p>
+                        <div class="service-features">
+                            <ul>
+                                <li><i class="fas fa-check"></i> Painel administrativo</li>
+                                <li><i class="fas fa-check"></i> Blog integrado</li>
+                                <li><i class="fas fa-check"></i> Analytics avançado</li>
+                                <li><i class="fas fa-check"></i> Suporte por 90 dias</li>
+                            </ul>
+                        </div>
+                        <div class="service-price">
+                            <span class="price">R$ 200,00</span>
+                        </div>
+                        <button class="btn btn-primary service-btn">Ver Detalhes</button>
+                    </div>
+
+                    <!-- Portfólio Customizável -->
+                    <div class="service-card" data-service="portfolio-customizavel">
+                        <div class="service-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3>Portfólio Customizável</h3>
+                        <p>Totalmente customizado conforme o cliente desejar</p>
+                        <div class="service-features">
+                            <ul>
+                                <li><i class="fas fa-check"></i> Design totalmente personalizado</li>
+                                <li><i class="fas fa-check"></i> Funcionalidades exclusivas</li>
+                                <li><i class="fas fa-check"></i> Integrações especiais</li>
+                                <li><i class="fas fa-check"></i> Suporte personalizado</li>
+                            </ul>
+                        </div>
+                        <div class="service-price">
+                            <span class="price">R$ 20-300</span>
+                        </div>
+                        <button class="btn btn-primary service-btn">Ver Detalhes</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Categoria: Scripts de Minecraft -->
+            <div class="service-category" id="minecraft">
+                <div class="services-grid">
+                    <!-- Script Básico -->
+                    <div class="service-card" data-service="minecraft-basico">
+                        <div class="service-icon">
+                            <i class="fas fa-cube"></i>
+                        </div>
+                        <h3>Script Básico</h3>
+                        <p>Moderação para servidor com suporte de 30 dias e atualizações eternas</p>
+                        <div class="service-features">
+                            <ul>
+                                <li><i class="fas fa-check"></i> Sistema de moderação</li>
+                                <li><i class="fas fa-check"></i> Suporte por 30 dias</li>
+                                <li><i class="fas fa-check"></i> Atualizações eternas</li>
+                                <li><i class="fas fa-check"></i> Configuração básica</li>
+                            </ul>
+                        </div>
+                        <div class="service-price">
+                            <span class="price">R$ 30,00</span>
+                        </div>
+                        <button class="btn btn-primary service-btn">Ver Detalhes</button>
+                    </div>
+
+                    <!-- Script Personalizado -->
+                    <div class="service-card" data-service="minecraft-personalizado">
+                        <div class="service-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>Script Personalizado</h3>
+                        <p>Funcionalidades específicas conforme sua solicitação</p>
+                        <div class="service-features">
+                            <ul>
+                                <li><i class="fas fa-check"></i> Funcionalidades específicas</li>
+                                <li><i class="fas fa-check"></i> Suporte por 90 dias</li>
+                                <li><i class="fas fa-check"></i> Atualizações eternas</li>
+                                <li><i class="fas fa-check"></i> Personalização total</li>
+                            </ul>
+                        </div>
+                        <div class="service-price">
+                            <span class="price">R$ 20-180</span>
+                        </div>
+                        <button class="btn btn-primary service-btn">Ver Detalhes</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Categoria: Servidores do Discord -->
+            <div class="service-category" id="discord">
+                <div class="services-grid">
+                    <!-- Servidor Básico -->
+                    <div class="service-card" data-service="servidor-basico">
+                        <div class="service-icon">
+                            <i class="fab fa-discord"></i>
+                        </div>
+                        <h3>Servidor Básico</h3>
+                        <p>Até 5 bots básicos configurados com suporte de 30 dias</p>
+                        <div class="service-features">
+                            <ul>
+                                <li><i class="fas fa-check"></i> Até 5 bots básicos</li>
+                                <li><i class="fas fa-check"></i> Todos configurados</li>
+                                <li><i class="fas fa-check"></i> Suporte por 30 dias</li>
+                                <li><i class="fas fa-check"></i> Configuração completa</li>
+                            </ul>
+                        </div>
+                        <div class="service-price">
+                            <span class="price">R$ 80,00</span>
+                        </div>
+                        <button class="btn btn-primary service-btn">Ver Detalhes</button>
+                    </div>
+
+                    <!-- Servidor Premium -->
+                    <div class="service-card" data-service="servidor-premium">
+                        <div class="service-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3>Servidor Premium</h3>
+                        <p>Todos os bots da loja configurados e personalizados</p>
+                        <div class="service-features">
+                            <ul>
+                                <li><i class="fas fa-check"></i> Todos os bots da loja</li>
+                                <li><i class="fas fa-check"></i> Personalização completa</li>
+                                <li><i class="fas fa-check"></i> Suporte por 2 anos</li>
+                                <li><i class="fas fa-check"></i> Atualizações e manutenção</li>
+                            </ul>
+                        </div>
+                        <div class="service-price">
+                            <span class="price">R$ 110,00</span>
+                        </div>
+                        <button class="btn btn-primary service-btn">Ver Detalhes</button>
+                    </div>
+
+                    <!-- Servidor Premium++ -->
+                    <div class="service-card premium-plus" data-service="servidor-premium-plus">
+                        <div class="service-icon">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <h3>Servidor Premium++</h3>
+                        <p>Suporte vitalício e totalmente customizável para lojas e servidores de games</p>
+                        <div class="service-features">
+                            <ul>
+                                <li><i class="fas fa-check"></i> Suporte vitalício</li>
+                                <li><i class="fas fa-check"></i> Totalmente customizável</li>
+                                <li><i class="fas fa-check"></i> Ideal para lojas/games</li>
+                                <li><i class="fas fa-check"></i> +5000 pessoas configuradas</li>
+                            </ul>
+                        </div>
+                        <div class="service-price">
+                            <span class="price">R$ 320,00</span>
+                        </div>
+                        <button class="btn btn-primary service-btn">Ver Detalhes</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Categoria: Sites -->
+            <div class="service-category" id="sites">
+                <div class="coming-soon-message">
+                    <h3>🚀 Em breve disponível</h3>
+                    <p>Criação de sites personalizados conforme sua necessidade, com design e funcionalidades
+                        exclusivos.</p>
+                </div>
+                <div class="services-grid">
+                    <!-- Site Básico -->
+                    <div class="service-card coming-soon" data-service="site-basico">
+                        <div class="service-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3>Site Básico</h3>
+                        <p>Estrutura simples e funcional</p>
+                        <div class="service-features">
+                            <ul>
+                                <li><i class="fas fa-check"></i> Design responsivo</li>
+                                <li><i class="fas fa-check"></i> Páginas essenciais</li>
+                                <li><i class="fas fa-check"></i> Formulário de contato</li>
+                                <li><i class="fas fa-check"></i> SEO básico</li>
+                            </ul>
+                        </div>
+                        <div class="service-price">
+                            <span class="price">Em breve</span>
+                        </div>
+                        <button class="btn btn-secondary service-btn" disabled>Em breve</button>
+                    </div>
+
+                    <!-- Site Completo -->
+                    <div class="service-card coming-soon" data-service="site-completo">
+                        <div class="service-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>Site Completo</h3>
+                        <p>Design profissional com recursos adicionais</p>
+                        <div class="service-features">
+                            <ul>
+                                <li><i class="fas fa-check"></i> Design profissional</li>
+                                <li><i class="fas fa-check"></i> Múltiplas páginas</li>
+                                <li><i class="fas fa-check"></i> Sistema de blog</li>
+                                <li><i class="fas fa-check"></i> Integrações avançadas</li>
+                            </ul>
+                        </div>
+                        <div class="service-price">
+                            <span class="price">Em breve</span>
+                        </div>
+                        <button class="btn btn-secondary service-btn" disabled>Em breve</button>
+                    </div>
+
+                    <!-- Site Premium -->
+                    <div class="service-card coming-soon" data-service="site-premium">
+                        <div class="service-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3>Site Premium</h3>
+                        <p>Totalmente customizado e avançado</p>
+                        <div class="service-features">
+                            <ul>
+                                <li><i class="fas fa-check"></i> Design exclusivo</li>
+                                <li><i class="fas fa-check"></i> Funcionalidades avançadas</li>
+                                <li><i class="fas fa-check"></i> Painel administrativo</li>
+                                <li><i class="fas fa-check"></i> Suporte completo</li>
+                            </ul>
+                        </div>
+                        <div class="service-price">
+                            <span class="price">Em breve</span>
+                        </div>
+                        <button class="btn btn-secondary service-btn" disabled>Em breve</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Modal -->
+    <div id="service-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modal-content"></div>
+        </div>
+    </div>
+
+    <!-- Qualities Section -->
+    <section id="qualities" class="qualities">
+        <div class="container">
+            <h2 class="section-title">Nossas Qualidades</h2>
+            <div class="qualities-grid">
+                <div class="quality-card">
+                    <div class="quality-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Originalidade</h3>
+                    <p>Código 100% original e personalizado para suas necessidades específicas</p>
+                </div>
+                <div class="quality-card">
+                    <div class="quality-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Segurança</h3>
+                    <p>Implementamos as melhores práticas de segurança em todos os projetos</p>
+                </div>
+                <div class="quality-card">
+                    <div class="quality-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h3>Performance</h3>
+                    <p>Código otimizado para máxima performance e eficiência</p>
+                </div>
+                <div class="quality-card">
+                    <div class="quality-icon">
+                        <i class="fas fa-mouse-pointer"></i>
+                    </div>
+                    <h3>Facilidade de Uso</h3>
+                    <p>Interfaces intuitivas e documentação completa para fácil utilização</p>
+                </div>
+                <div class="quality-card">
+                    <div class="quality-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Suporte Técnico</h3>
+                    <p>Suporte especializado disponível para resolver suas dúvidas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fun Section -->
+    <section id="fun" class="fun">
+        <div class="container">
+            <h2 class="section-title">Diversão</h2>
+            <div class="game-container">
+                <div class="game-header">
+                    <h3>Snake Futurista</h3>
+                    <div class="game-controls">
+                        <button id="start-game" class="btn btn-primary">Iniciar Jogo</button>
+                        <button id="pause-game" class="btn btn-secondary">Pausar</button>
+                        <span class="score">Pontuação: <span id="score">0</span></span>
+                    </div>
+                </div>
+                <canvas id="game-canvas" width="400" height="400"></canvas>
+                <div class="game-instructions">
+                    <p><strong>Como Jogar:</strong> Use as setas do teclado (↑↓←→) ou WASD para controlar a cobra.
+                        Colete os pontos para crescer!</p>
+                    <p class="device-warning"><i class="fas fa-exclamation-triangle"></i> <strong>Aviso:</strong> Este
+                        jogo funciona melhor em computadores. Em celulares, o controle pode não funcionar adequadamente.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Entre em Contato</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Informações de Contato</h3>
+                    <div class="contact-item">
+                        <i class="fab fa-discord"></i>
+                        <a href="https://discord.gg/QtDWnzg7n2" target="_blank">Entre no nosso Discord</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-instagram"></i>
+                        <span>@devstore</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <span>Segunda a Sexta: 9h às 18h</span>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Seu nome" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Seu email" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="service" name="service">
+                                <option value="">Selecione um serviço (opcional)</option>
+                                <option value="bot-basico">Bot Básico</option>
+                                <option value="bot-musica">Bot de Música</option>
+                                <option value="bot-ia">Bot IA</option>
+                                <option value="bot-agenda">Bot de Agenda</option>
+                                <option value="bot-customizavel">Bot Customizável</option>
+                                <option value="bot-premium">Bot Premium</option>
+                                <option value="portfolio-basico">Portfólio Básico</option>
+                                <option value="portfolio-premium">Portfólio Premium</option>
+                                <option value="portfolio-customizavel">Portfólio Customizável</option>
+                                <option value="minecraft-basico">Script Minecraft Básico</option>
+                                <option value="minecraft-personalizado">Script Minecraft Personalizado</option>
+                                <option value="servidor-basico">Servidor Discord Básico</option>
+                                <option value="servidor-premium">Servidor Discord Premium</option>
+                                <option value="servidor-premium-plus">Servidor Discord Premium++</option>
+                                <option value="site-basico">Site Básico</option>
+                                <option value="site-completo">Site Completo</option>
+                                <option value="site-premium">Site Premium</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Sua mensagem" rows="5"
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SAIMON DEV STORE</h3>
+                    <p>Transformando ideias em realidade digital</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Redes Sociais</h3>
+                    <div class="social-links">
+                        <a href="https://discord.gg/QtDWnzg7n2" target="_blank" class="social-link">
+                            <i class="fab fa-discord"></i>
+                            Discord
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                            Instagram
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Informações</h3>
+                    <p>&copy; 2025 SAIMON DEV STORE. Todos os direitos reservados.</p>
+                    <p>Versão 1.0.0</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão RELAXE Fixo -->
+    <div class="relaxe-button">
+        <button id="relaxe-btn" class="btn btn-relaxe">
+            <i class="fas fa-music"></i>
+            <span>RELAXE</span>
+        </button>
+    </div>
+
+    <!-- Aba RELAXE Fixa -->
+    <div id="relaxe-tab" class="relaxe-tab">
+        <div class="relaxe-tab-header">
+            <div class="relaxe-tab-title">
+                <i class="fas fa-music"></i>
+                <span>🎵 Lofi para Relaxar</span>
+            </div>
+            <div class="relaxe-tab-controls">
+                <button id="minimize-relaxe" class="relaxe-tab-btn">
+                    <i class="fas fa-minus"></i>
+                </button>
+                <button id="close-relaxe-tab" class="relaxe-tab-btn">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+        <div class="relaxe-tab-content">
+            <div class="lofi-player">
+                <iframe id="lofi-iframe" width="100%" height="200"
+                    src="https://www.youtube.com/embed/7NOSDKb0HlU?autoplay=0&controls=1&rel=0" title="Lofi Live"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
